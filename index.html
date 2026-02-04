@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brochure Site</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.0.0/dist/flowbite.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="dist/output.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+  <script src="components/header.js"></script>
+
+<!-- Hero: visual image with heading -->
+<section class="bg-background dark:bg-background">
+  <div class="section-inner grid lg:gap-8 xl:gap-0 lg:grid-cols-12">
+      <div class="mr-auto place-self-center lg:col-span-7">
+          <h1 class="max-w-2xl mb-4 text-4xl tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">Legal experts to keep your move on track</h1>
+          <p class="max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl">Online conveyancing with regular updates and friendly support whenever you need it.</p>
+          <p class="mb-4 font-medium">How can we help?</p>
+          <div class="flex flex-wrap gap-3 max-[550px]:flex-col max-[550px]:w-full max-[550px]:max-w-xs max-[550px]:mx-auto">
+            <a href="#" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 max-[550px]:w-full">I'm buying</a>
+            <a href="#" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 max-[550px]:w-full">I'm selling</a>
+            <a href="#" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 max-[550px]:w-full">I'm buying and selling</a>
+          </div> 
+      </div>
+      <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+          <img src="images/hero2.png" alt="" class="rounded-lg w-full">
+      </div>                
+  </div>
+</section>
+
+<!-- Why trust koala -->  
+<section class="bg-background-soft dark:bg-background-soft border-t border-b border-gray-200 dark:border-gray-700">
+    <div class="py-5 px-3 mx-auto max-w-screen-xl text-center sm:py-8 lg:px-4">
+        <div class="space-y-6 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-6 md:space-y-0">
+            <div>
+                <div class="trust-icon-squircle mx-auto mb-3 flex w-12 h-12 shrink-0 items-center justify-center rounded-2xl">
+                    <img src="images/shield-check.svg" alt="" class="trust-icon w-6 h-6" aria-hidden="true" />
+                </div>
+                <h3 class="text-base sm:text-lg font-medium text-heading">CLC regulated, fully insured</h3>
+            </div>
+            <div>
+                <div class="trust-icon-squircle mx-auto mb-3 flex w-12 h-12 shrink-0 items-center justify-center rounded-2xl">
+                    <img src="images/profile-card.svg" alt="" class="trust-icon w-6 h-6" aria-hidden="true" />
+                </div>
+                <h3 class="text-base sm:text-lg font-medium text-heading">Expert conveyancers</h3>
+            </div>
+            <div>
+                <div class="trust-icon-squircle mx-auto mb-3 flex w-12 h-12 shrink-0 items-center justify-center rounded-2xl">
+                    <img src="images/lock.svg" alt="" class="trust-icon w-6 h-6" aria-hidden="true" />
+                </div>
+                <h3 class="text-base sm:text-lg font-medium text-heading">Secure & paper free</h3>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Alternate image with feature list -->
+<section class="bg-background dark:bg-background">
+  <div class="py-8 px-4 mx-auto space-y-12 max-w-screen-xl lg:space-y-20 sm:py-16 lg:px-6">
+      <!-- Row -->
+      <div class="rounded-lg border border-gray-200 dark:border-gray-700 bg-background-soft dark:bg-background-soft shadow-sm overflow-hidden">
+          <div class="gap-8 items-center lg:grid lg:grid-cols-2 xl:gap-16 p-6 sm:p-8 lg:p-10">
+          <div class="text-gray-500 sm:text-lg dark:text-gray-400">
+              <h2 class="mb-4 text-2xl sm:text-3xl lg:text-4xl tracking-tight font-extrabold text-heading">Updates you can trust</h2>
+              <p class="mb-8 font-light text-base sm:text-lg lg:text-xl">We keep you informed from offer to completion, without you having to chase. Always know what's happening and what comes next.</p>
+              <!-- List -->
+              <ul role="list" class="pt-8 my-7 space-y-5 border-t border-gray-200 dark:border-gray-700">
+                  <li class="flex space-x-3">
+                      <!-- Icon -->
+                      <svg class="flex-shrink-0 w-5 h-5 text-primary-600 dark:text-primary-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                      <span class="text-sm sm:text-base font-medium leading-tight text-gray-900 dark:text-white">Live milestone tracking</span>
+                  </li>
+                  <li class="flex space-x-3">
+                      <!-- Icon -->
+                      <svg class="flex-shrink-0 w-5 h-5 text-primary-600 dark:text-primary-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                      <span class="text-sm sm:text-base font-medium leading-tight text-gray-900 dark:text-white">Proactive updates via WhatsApp</span>
+                  </li>
+                  <li class="flex space-x-3">
+                      <!-- Icon -->
+                      <svg class="flex-shrink-0 w-5 h-5 text-primary-600 dark:text-primary-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                      <span class="text-sm sm:text-base font-medium leading-tight text-gray-900 dark:text-white">Humans available to answer any question</span>
+                  </li>
+              </ul>
+          </div>
+<img class="block w-full rounded-lg mb-4 lg:mb-0 max-h-64 sm:max-h-none object-cover" src="images/whatsapp.png" alt="WhatsApp">
+      </div>
+      </div>
+      <!-- Row -->
+      <div class="rounded-lg border border-gray-200 dark:border-gray-700 bg-background-soft dark:bg-background-soft shadow-sm overflow-hidden">
+          <div class="gap-8 items-center lg:grid lg:grid-cols-2 xl:gap-16 p-6 sm:p-8 lg:p-10">
+          <img class="block w-full rounded-lg mb-4 lg:mb-0 max-h-64 sm:max-h-none object-cover" src="images/progress.png" alt="Progress">
+          <div class="text-gray-500 sm:text-lg dark:text-gray-400">
+              <h2 class="mb-4 text-2xl sm:text-3xl lg:text-4xl tracking-tight font-extrabold text-heading">Less paperwork, more progress</h2>
+              <p class="mb-8 font-light text-base sm:text-lg lg:text-xl">We've swapped messy stacks of paper for a streamlined digital process, so less of the usual delays and more time to get on with your move.</p>
+              <!-- List -->
+              <ul role="list" class="pt-8 my-7 space-y-5 border-t border-gray-200 dark:border-gray-700">
+                  <li class="flex space-x-3">
+                      <!-- Icon -->
+                      <svg class="flex-shrink-0 w-5 h-5 text-primary-600 dark:text-primary-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                      <span class="text-sm sm:text-base font-medium leading-tight text-gray-900 dark:text-white">Only share your details once</span>
+                  </li>
+                  <li class="flex space-x-3">
+                      <!-- Icon -->
+                      <svg class="flex-shrink-0 w-5 h-5 text-primary-600 dark:text-primary-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                      <span class="text-sm sm:text-base font-medium leading-tight text-gray-900 dark:text-white">Sign and upload your docs online</span>
+                  </li>
+                  <li class="flex space-x-3">
+                      <!-- Icon -->
+                      <svg class="flex-shrink-0 w-5 h-5 text-primary-600 dark:text-primary-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                      <span class="text-sm sm:text-base font-medium leading-tight text-gray-900 dark:text-white">Keep your info safe and secure</span>
+                  </li>
+              </ul>
+          </div>
+          </div>
+      </div>
+      <!-- Row -->
+      <div class="rounded-lg border border-gray-200 dark:border-gray-700 bg-background-soft dark:bg-background-soft shadow-sm overflow-hidden">
+          <div class="gap-8 items-center lg:grid lg:grid-cols-2 xl:gap-16 p-6 sm:p-8 lg:p-10">
+          <div class="text-gray-500 sm:text-lg dark:text-gray-400">
+              <h2 class="mb-4 text-2xl sm:text-3xl lg:text-4xl tracking-tight font-extrabold text-heading">Here when you need us</h2>
+              <p class="mb-8 font-light text-base sm:text-lg lg:text-xl">We're easy to reach when it matters. Our approachable team is ready to connect when it suits you.</p>
+              <!-- List -->
+              <ul role="list" class="pt-8 my-7 space-y-5 border-t border-gray-200 dark:border-gray-700">
+                  <li class="flex space-x-3">
+                      <!-- Icon -->
+                      <svg class="flex-shrink-0 w-5 h-5 text-primary-600 dark:text-primary-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                      <span class="text-sm sm:text-base font-medium leading-tight text-gray-900 dark:text-white">Dedicated conveyancer on your move</span>
+                  </li>
+                  <li class="flex space-x-3">
+                      <!-- Icon -->
+                      <svg class="flex-shrink-0 w-5 h-5 text-primary-600 dark:text-primary-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                      <span class="text-sm sm:text-base font-medium leading-tight text-gray-900 dark:text-white">Schedule a call with us in advance</span>
+                  </li>
+                  <li class="flex space-x-3">
+                      <!-- Icon -->
+                      <svg class="flex-shrink-0 w-5 h-5 text-primary-600 dark:text-primary-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                      <span class="text-sm sm:text-base font-medium leading-tight text-gray-900 dark:text-white">Get jargon-free updates</span>
+                  </li>
+              </ul>
+          </div>
+          <img class="block w-full rounded-lg mb-4 lg:mb-0 max-h-64 sm:max-h-none object-cover" src="images/booking.png" alt="Booking">
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="bg-background-soft">
+    <div class="w-full text-center bg-background-soft p-6 border border-default shadow-xs border-t-0">
+        <h5 class="mb-3 text-xl sm:text-2xl tracking-tight font-semibold text-heading">Get an instant quote</h5>
+    <p class="mb-6 text-base text-body sm:text-lg">Get your no obligation quote in 1 minute.</p>
+    <div class="flex flex-wrap gap-3 justify-center max-[550px]:flex-col max-[550px]:w-full max-[550px]:max-w-xs max-[550px]:mx-auto">
+        <a href="#" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 max-[550px]:w-full">I'm buying</a>
+        <a href="#" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 max-[550px]:w-full">I'm selling</a>
+        <a href="#" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 max-[550px]:w-full">I'm buying and selling</a>
+    </div>
+    </div>
+</section>
+
+  <div id="site-footer"></div>
+  <script src="components/footer.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+</body>
+</html>
