@@ -70,7 +70,7 @@
     --default-border-width: 1px;
 
     /* text colors (Flowbite) – heading colour matches hero heading, use for all h1–h6 / text-heading */
-    --color-body: var(--color-gray-600);
+    --color-body: #1A2C37;
     --color-body-subtle: var(--color-gray-500);
     --color-heading: #1a2c37;
     --color-fg-brand-subtle: #d5dde2;
@@ -321,7 +321,7 @@
         justify-content: center;
         font-weight: 500;
         text-align: center;
-        border-radius: var(--radius);
+        border-radius: var(--radius-lg);
         border: var(--border-width-btn-outline) solid var(--color-btn-outline-border);
         color: var(--color-btn-outline-text);
         background-color: transparent;
