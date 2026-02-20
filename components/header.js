@@ -1,5 +1,7 @@
 (function () {
   (function injectPostHog() {
+    var hostname = window.location.hostname;
+    if (hostname === 'localhost' || hostname === '127.0.0.1') return;
     if (window.posthog && window.posthog.__loaded) return;
     var script = document.createElement('script');
     script.src = 'components/posthog.js';
