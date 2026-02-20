@@ -1,4 +1,12 @@
 (function () {
+  (function injectPostHog() {
+    if (window.posthog && window.posthog.__loaded) return;
+    var script = document.createElement('script');
+    script.src = 'components/posthog.js';
+    script.async = true;
+    (document.head || document.documentElement).appendChild(script);
+  })();
+
   var container = document.getElementById('site-header');
   if (!container) return;
 
