@@ -9,6 +9,25 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/flowbite@3.0.0/dist/flowbite.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="dist/output.css" />
+  <style>
+    #member_submit {
+      transition: background-color 1s ease;
+    }
+    #member_submit.email-submitted {
+      cursor: default;
+      background-color: #B8B8B2;
+      pointer-events: none;
+    }
+    #member_submit.email-submitted:hover {
+      background-color: #B8B8B2;
+    }
+    html.dark #member_submit.email-submitted {
+      background-color: #B8B8B2;
+    }
+    html.dark #member_submit.email-submitted:hover {
+      background-color: #B8B8B2;
+    }
+  </style>
 </head>
 <body>
   <div id="site-header" class="sticky top-0 z-50"></div>
@@ -19,9 +38,7 @@
         <div class="mr-auto place-self-center lg:col-span-7 xl:col-span-8">
             <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">No chasing, just selling</h1>
             <p class="max-w-2xl mb-10 font-light lg:mb-12 md:text-lg lg:text-xl">Know what’s blocking sales. Stay up to date in real time, with fully transparent conveyancing.</p>
-            <!-- Commented out email form - replaced with simpler contact section -->
-            <!--
-            <form action="#" class="">
+            <form id="estate-agent-email-form" action="#" class="">
                 <div class="flex items-center mb-3">
                     <div class="relative w-auto mr-3">
                         <label for="member_email" class="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email address</label>
@@ -35,11 +52,6 @@
                     </div>
                 </div>
             </form>
-            -->
-            
-            <div class="max-w-2xl border-t-2 border-gray-200 dark:border-gray-700">
-                <p class="mb-6 text-xl font-semibold text-heading dark:text-white">Get in touch: <a href="mailto:hello@koala.legal" class="text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300 transition-colors">hello@koala.legal</a></p>
-            </div>
         </div>
         <div class="hidden lg:mt-0 lg:col-span-5 xl:col-span-4 lg:flex">
             <img src="images/house.png" alt="house illustration">
@@ -176,5 +188,14 @@
   <div id="site-footer"></div>
   <script src="components/footer.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+  <script>
+    document.getElementById('estate-agent-email-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var btn = document.getElementById('member_submit');
+      btn.disabled = true;
+      btn.value = "Thanks! We'll be in touch";
+      btn.classList.add('email-submitted');
+    });
+  </script>
 </body>
 </html>
